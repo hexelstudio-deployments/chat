@@ -25,10 +25,10 @@ export const myProvider = isTestEnvironment
       languageModels: {
         'chat-model': google('gemini-2.5-flash-lite'),
         'chat-model-reasoning': wrapLanguageModel({
-          model: google('gemini-2.5-pro'),
+          model: google('gemini-2.5-flash'),
           middleware: extractReasoningMiddleware({ tagName: 'think' }),
         }),
         'title-model': google('gemini-2.5-flash-lite'),
-        'artifact-model': google('gemini-2.5-flash'),
+        'artifact-model': google('gemini-2.5-flash-lite'),
       },
     });
