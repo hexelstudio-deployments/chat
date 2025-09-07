@@ -7,9 +7,9 @@ import './globals.css';
 import { SessionProvider } from 'next-auth/react';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://chat.vercel.ai'),
-  title: 'Next.js Chatbot Template',
-  description: 'Next.js chatbot template using the AI SDK.',
+  metadataBase: new URL('https://chat-studio.vercel.app'),
+  title: 'Hexel Studio',
+  description: 'Hexel Studio is a powerful platform for building AI chatbots using the latest technologies.',
 };
 
 export const viewport = {
