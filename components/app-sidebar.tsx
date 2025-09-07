@@ -17,6 +17,7 @@ import {
 } from '@/components/ui/sidebar';
 import Link from 'next/link';
 import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip';
+import Image from 'next/image';
 
 export function AppSidebar({ user }: { user: User | undefined }) {
   const router = useRouter();
@@ -34,8 +35,9 @@ export function AppSidebar({ user }: { user: User | undefined }) {
               }}
               className="flex flex-row gap-3 items-center"
             >
+              <Image src="/images/logo.jpg" alt="logo" width={32} height={32} className='rounded-full' />
               <span className="text-lg font-semibold px-2 hover:bg-muted rounded-md cursor-pointer">
-                Chatbot
+               Hexel Studio
               </span>
             </Link>
             <Tooltip>
